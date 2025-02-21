@@ -1,6 +1,6 @@
 <?php
 
-namespace Backpack\ThemeTabler\View\Components;
+namespace TanNhatCMS\ThemeTablerLMS\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -13,6 +13,6 @@ class MenuDropdownColumn extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('backpack.theme-tabler::components.menu-dropdown-column');
+        return view('tannhatcms.theme-tabler-lms::components.menu-dropdown-column');
     }
 }

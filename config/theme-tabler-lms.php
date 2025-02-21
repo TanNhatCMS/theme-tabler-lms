@@ -33,14 +33,14 @@ return [
     /**
      * Here you can easily load your own extra css styles.
      * Note: if you want to customize the style to create your own custom skin colors:
-     *   - make a copy of the file "vendor/backpack/theme-tabler/resources/assets/css/colors.css" into your project
+     *   - make a copy of the file "vendor/tannhatcms/theme-tabler-lms/resources/assets/css/colors.css" into your project
      *   - adjust colors variables as you wish
-     *   - replace "base_path('vendor/backpack/theme-tabler/resources/assets/css/colors.css')," with the path to the file created above
+     *   - replace "base_path('vendor/tannhatcms/theme-tabler-lms/resources/assets/css/colors.css')," with the path to the file created above
      *   - boom!
      */
     'styles' => [
-        base_path('vendor/backpack/theme-tabler/resources/assets/css/color-adjustments.css'),
-        base_path('vendor/backpack/theme-tabler/resources/assets/css/colors.css'),
+        base_path('vendor/tannhatcms/theme-tabler-lms/resources/assets/css/color-adjustments.css'),
+        base_path('vendor/tannhatcms/theme-tabler-lms/resources/assets/css/colors.css'),
     ],
 
     /**

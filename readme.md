@@ -20,7 +20,7 @@ The file structure inside this package has changed a bit from Backpack v3-v5. We
 Because this a 1st party theme, you can quickly install it using
 
 ```
-php artisan backpack:require:theme-tabler
+php artisan tannhatcms:require:theme-tabler-lms
 ```
 
 Alternatively, follow the manual installation process below.
@@ -30,20 +30,20 @@ Alternatively, follow the manual installation process below.
 **Step 1.** Install via Composer
 
 ``` bash
-composer require backpack/theme-tabler
+composer require tannhatcms/theme-tabler-lms
 ```
 
 **Step 2.** Go to `config/backpack/ui.php` and change your view namespace:
 
 ```diff
--    'view_namespace' => 'backpack::',
-+    'view_namespace' => 'backpack.theme-tabler::',
+-    'view_namespace' => 'tannhatcms::',
++    'view_namespace' => 'tannhatcms.theme-tabler-lms::',
 ```
 
 **Step 3. (Optional)** Publish the theme config file:
 
 ```bash
-php artisan vendor:publish --tag="theme-tabler-config"
+php artisan vendor:publish --tag="theme-tabler-lms-config"
 ```
 
 ## Config
@@ -67,8 +67,8 @@ Note: Any value set here will override the ones defined in config/backpack/ui.ph
 
 ```php
 'styles' => [
-  base_path('vendor/backpack/theme-tabler/resources/assets/css/color-adjustments.css'),
-  base_path('vendor/backpack/theme-tabler/resources/assets/css/colors.css'),
+  base_path('vendor/tannhatcms/theme-tabler-lms/resources/assets/css/color-adjustments.css'),
+  base_path('vendor/tannhatcms/theme-tabler-lms/resources/assets/css/colors.css'),
  // add your css here
 ],
 ```
@@ -138,8 +138,8 @@ Note: Any value set here will override the ones defined in config/backpack/ui.ph
 
 To uninstall this Backpack theme:
 
-1. Remove the composer package. Eg. `composer remove backpack/theme-tabler`
-2. Delete the config file. Eg. `rm -rf config/backpack/theme-tabler.php`
+1. Remove the composer package. Eg. `composer remove tannhatcms/theme-tabler-lms`
+2. Delete the config file. Eg. `rm -rf config/tannhatcms/theme-tabler.php`
 3. Install a new theme (eg. `php artisan backpack:require:theme-coreuiv4`) or change the `view_namespace` in `config/backpack/ui.php` to the theme you want to be active.
 
 ## Overriding
@@ -150,15 +150,15 @@ The more files you copy-paste and customize, the more difficult it will be to up
 
 ```bash
 # create the custom directory if it's not already there
-mkdir -p resources/views/vendor/backpack/theme-tabler
+mkdir -p resources/views/vendor/tannhatcms/theme-tabler-lms
 
 # copy the blade file inside the folder we created above
-cp -i vendor/backpack/crud/src/resources/views/ui/dashboard.blade.php resources/views/vendor/backpack/theme-tabler/dashboard.blade.php
+cp -i vendor/tannhatcms/crud-lms/src/resources/views/ui/dashboard.blade.php resources/views/vendor/tannhatcms/theme-tabler-lms/dashboard.blade.php
 ```
 
 ## Change log
 
-Changes are documented here on Github. Please see the [Releases tab](https://github.com/backpack/theme-tabler/releases).
+Changes are documented here on Github. Please see the [Releases tab](https://github.com/tannhatcms/theme-tabler-lms/releases).
 
 ## Contributing
 
@@ -177,10 +177,3 @@ If you discover any security related issues, please email hello@backpackforlarav
 
 This project was released under MIT, so you can install it on top of any Backpack & Laravel project. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/backpack/theme-tabler.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/backpack/theme-tabler.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/backpack/theme-tabler
-[link-downloads]: https://packagist.org/packages/backpack/theme-tabler
-[link-author]: https://github.com/backpack
-[link-contributors]: ../../contributors
